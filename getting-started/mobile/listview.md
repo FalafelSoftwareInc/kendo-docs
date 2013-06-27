@@ -137,12 +137,16 @@ please review the [Kendo UI Templates](http://www.kendoui.com/documentation/fram
 The listview widget supports displaying large amounts of data by appending additional pages of data on demand.
 Loading can happen automatically by enabling [endless scrolling](http://docs.kendoui.com/api/mobile/listview#configuration-endlessScroll), or by displaying a button at the bottom ([ press to load more ](http://docs.kendoui.com/api/mobile/listview#configuration-loadMore)).
 Enabling endless scrolling or press to load more options triggers the **virtual mode** of the ListView.
-In virtual mode, fixed amount of DOM elements is rendered, and then dynamically repositioned and updated when the user scrolls the view.
-In endless scrolling mode, the next page is automatically prefetched when the user scrolls past two thirds of the current set of items.
-The amount of actual DOM elements used in virtual mode is equal to half of the datasource page size option.
+
+In virtual mode, fixed amount of DOM elements is rendered, and then dynamically repositioned and updated when the user scrolls the view. In endless scrolling mode, the next page is automatically prefetched when the user scrolls past two thirds of the current set of items.
+
+> The amount of actual DOM elements used in virtual mode is equal to half of the datasource page size option.
+
 In order for the scrolling to occur smoothly, the page size should **not be too low**.
 For example, if 5 items are visible on the page, at least 15 physical DOM elements are needed, which means that the DataSource page size should be 30 or greater.
-**Notice** Bigger DataSource page size ensures smooth scrolling, but has adverce effects on view transition performance.
+
+> Bigger DataSource page size ensures smooth scrolling, but has adverce effects on view transition performance.
+
 Once the listview reaches the amount of items specified by the [schema.total](http://docs.kendoui.com/api/framework/datasource#configuration-schema.total) setting of the datasource, the loadmore button/endless scrolling indicator is hidden.
 
 ## Link Items
