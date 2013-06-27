@@ -438,7 +438,7 @@ Returns a number of properties that identify the current mobile browser. Parses 
 
 #### support.mobileOS
 ##### device `String`
-Returns the current mobile device identificator, can be "fire", "android", "iphone", "ipad", "meego", "webos", "blackberry", "playbook", "winphone", "windows".
+Returns the current mobile device identificator, can be "fire", "android", "iphone", "ipad", "meego", "webos", "blackberry", "playbook", "wp", "windows".
 
 ##### tablet `String` *(default: false)*
 Returns the current tablet identificator or false if the current device is not a tablet, can be "fire", "ipad", "playbook" or false.
