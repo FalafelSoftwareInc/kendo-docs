@@ -22,10 +22,9 @@ to add Kendo UI Complete for ASP.NET MVC to the application.
 
         public ActionResult Index()
         {
-            ViewBag.Message = "Welcome to ASP.NET MVC!";
-
             return View();
         }
+
 1. Add a Kendo UI MobileActionSheet to the Index view. As most mobile widgets MobileActionSheet must be initialized within MobileView content
     - Index.aspx (ASPX)
 
@@ -35,7 +34,6 @@ to add Kendo UI Complete for ASP.NET MVC to the application.
                     .Content(() =>
                     {
                         %>
-
                         <!-- Add button to open the actionsheet widget -->
                         <%: Html.Kendo().MobileButton()
                                 .Name("button")
@@ -44,12 +42,10 @@ to add Kendo UI Complete for ASP.NET MVC to the application.
                                 .Url("#inboxActions")
                         %>
 
-                        <%
-                        Html.Kendo().MobileActionSheet()
+                        <% Html.Kendo().MobileActionSheet()
                             .Name("inboxActions")
                             .Popup(popup => popup.Direction(MobilePopupDirection.Left))
                             .Title("Monday Meeting:")
-                            .Events(events => events.Open("onOpen"))
                             .Items(items => {
                                 items.Add().Text("Reply");
                                 items.Add().Text("Reply All");
@@ -69,7 +65,6 @@ to add Kendo UI Complete for ASP.NET MVC to the application.
                 .Title("Inbox")
                 .Content(
                     @<text>
-
                     <!-- Add button to open the actionsheet widget -->
                     @(Html.Kendo().MobileButton()
                         .Name("button")
@@ -82,7 +77,6 @@ to add Kendo UI Complete for ASP.NET MVC to the application.
                         .Name("inboxActions")
                         .Popup(popup => popup.Direction(MobilePopupDirection.Left))
                         .Title("Monday Meeting:")
-                        .Events(events => events.Open("onOpen"))
                         .Items(items => {
                             items.Add().Text("Reply");
                             items.Add().Text("Reply All");
@@ -118,7 +112,6 @@ Then you can use you can use the JavaScript [API](/api/mobile/actionsheet#method
         .Name("inboxActions")
         .Popup(popup => popup.Direction(MobilePopupDirection.Left))
         .Title("Monday Meeting:")
-        .Events(events => events.Open("onOpen"))
         .Items(items => {
             items.Add().Text("Reply");
             items.Add().Text("Reply All");
