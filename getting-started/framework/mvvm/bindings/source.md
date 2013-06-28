@@ -22,6 +22,8 @@ will be set as the HTML content of the target element. The context inside the te
 
 Adding or removing items from the array will update the HTML contents of the target element.
 
+> *Important:* A single root element should be used in the template when binding to an array.
+
 ### Source binding to array of objects
 
     <ul data-template="ul-template" data-bind="source: products">
