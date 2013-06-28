@@ -427,7 +427,7 @@ Expands nodes.
 
 ##### nodes `jQuery | Element | String`
 
-The nodes that are to be collapsed.
+The nodes that are to be expanded.
 
 ### findByText
 
