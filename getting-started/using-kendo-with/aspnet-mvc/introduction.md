@@ -329,3 +329,20 @@ You can include the JavaScript and CSS files from CDN. Don't forget to specify t
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://cdn.kendostatic.com/<version>/js/kendo.web.min.js"></script>
     <script src="http://cdn.kendostatic.com/<version>/js/kendo.aspnetmvc.min.js"></script>
+
+### Deferring Kendo UI Initialization Scripts
+
+When using server-side wrappers, the Kendo UI widget initialization scripts are rendered right after the widget's HTML markup.
+This may not be always desired, e.g. if the script files are registered at the bottom of the page, or when nesting Kendo UI widgets.
+In order to move initialization statements, one can use the following approach:
+
+	@(Html.Kendo().TabStrip()
+		.Name("tabstrip")
+		.Deferred()
+	)
+	
+	...some other page content here...
+
+	@Html.Kendo().DeferredScripts()
+
+The `Deferred()` fluent method will suppress immediate script statement rendering, while the `DeferredScripts()` method will output all previously deferred initialization statements.
