@@ -346,3 +346,9 @@ In order to move initialization statements, one can use the following approach:
 	@Html.Kendo().DeferredScripts()
 
 The `Deferred()` fluent method will suppress immediate script statement rendering, while the `DeferredScripts()` method will output all previously deferred initialization statements.
+
+`DeferredScripts()` accepts a boolean parameter, which determines whether `&lt;script&gt;` tags should be rendered automatically, for example
+
+	@Html.Kendo().DeferredScripts(false)
+
+The default value is `true`. Setting false will allow you to include the initialization scripts in an existing `script` element.
