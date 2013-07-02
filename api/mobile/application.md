@@ -84,6 +84,28 @@ If set to true, the application will not use ajax to load remote views.
 
 > Using this configuration option will affect the user experience, as blank screens will be visible between application states. As the page will be completely reloaded, the application state will not be transferred to the next view.
 
+### skin `String`
+
+The skin to apply to the application. Currently, Kendo UI Mobile ships with a **flat** skin in addition to the native looking ones.
+
+> Ulike the platform option, the skin setting will be applied on any device, making the app look the same way.
+
+#### Example
+
+    <script>
+         new kendo.mobile.Application($(document.body), {
+             skin: "flat"
+         });
+    </script>
+
+#### Example
+
+    <script>
+         new kendo.mobile.Application($(document.body), {
+             platform: "android"
+         });
+    </script>
+
 ### transition `String`
 
  The default View transition.
