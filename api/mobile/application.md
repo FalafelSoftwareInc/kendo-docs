@@ -98,14 +98,6 @@ The skin to apply to the application. Currently, Kendo UI Mobile ships with a **
          });
     </script>
 
-#### Example
-
-    <script>
-         new kendo.mobile.Application($(document.body), {
-             platform: "android"
-         });
-    </script>
-
 ### transition `String`
 
  The default View transition.
