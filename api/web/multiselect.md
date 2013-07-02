@@ -502,6 +502,8 @@ The value to set.
 
 `Array` The value of the multiselect.
 
+> **Important:** If no items, value method will pre-fetch the data before continue with the value setting.
+
 > If initial items are lost in attempt to set new values, probably the widget is filtered by the end user, but no value has been selected. You will need to remove applied filter, before calling value method
 
     var multiselect = $("#multiselect").data("kendoMultiSelect");
