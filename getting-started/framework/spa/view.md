@@ -1,6 +1,7 @@
 ---
 title: View
 slug: spa-view
+ordinal: 4
 publish: true
 ---
 

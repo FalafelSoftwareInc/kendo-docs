@@ -1,6 +1,7 @@
 ---
 title: Overview
 slug: spa-overview
+ordinal: 1
 publish: true
 ---
 # Kendo Single Page Application Overview

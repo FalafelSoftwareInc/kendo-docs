@@ -3,6 +3,7 @@ title: ObservableObject
 meta_title: ObservableObject in Kendo UI MVVM framework | Kendo UI Documentation
 meta_description: Initialize ObservableObject in Kendo UI MVVM framework, get a field value, set a field value to change tracking and notify any subscribers when a change occurs.
 slug: mvvm-observableObject
+ordinal: 2
 publish: true
 ---
 

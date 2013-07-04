@@ -1,6 +1,7 @@
 ---
 title: Layout
 slug: spa-layout
+ordinal: 3
 publish: true
 ---
 

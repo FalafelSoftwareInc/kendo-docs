@@ -1,6 +1,7 @@
 ---
 title: Router
 slug: spa-router
+ordinal: 2
 publish: true
 ---
 
