@@ -229,9 +229,9 @@ for more information.
          });
     </script>
 
-### Open web clip link in the browser
-
 As of Q2 2013, you can disable the app mode and open the home screen web clip link in the browser (by default Kendo UI Mobile applications are web app capable and open without the browser chrome).
+
+### Open web clip link in the browser
 
     <script>
          new kendo.mobile.Application($(document.body), {
