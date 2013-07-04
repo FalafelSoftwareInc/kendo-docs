@@ -183,6 +183,27 @@ Show the loading animation.
       app.showLoading();
     </script>
 
+### skin
+
+Change the current skin of the mobile application. When used without parameters, returns the currently used skin. Available as of Q2 2013.
+
+#### Example
+
+    <script>
+      var app = new kendo.mobile.Application();
+      app.skin("flat");
+    </script>
+
+#### Parameters
+
+##### skin `String`
+
+The skin name to switch to or empty string to return to native.
+
+#### Returns
+
+`String` Current skin in effect.
+
 ### view
 
 Get a reference to the current view.
