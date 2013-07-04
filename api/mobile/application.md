@@ -100,12 +100,22 @@ The skin to apply to the application. Currently, Kendo UI Mobile ships with a **
 
 ### transition `String`
 
- The default View transition.
+The default View transition.
 
 #### Example
 
     <script>
          new kendo.mobile.Application($(document.body), { transition: "slide" });
+    </script>
+
+### webAppCapable `Boolean` **(default: true)**
+
+Disables the default behavior of Kendo UI Mobile apps to be web app capable (open in a chromeless browser). Introduced in Q2 2013.
+
+#### Example
+
+    <script>
+         new kendo.mobile.Application($(document.body), { webAppCapable: false });
     </script>
 
 ## Methods
