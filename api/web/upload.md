@@ -119,7 +119,7 @@ The [template](http://docs.kendoui.com/api/framework/kendo#methods-template) use
 *   files - array with information about all selected files - name, size and extension
 
 > **Important:** You should add the following markup to the template in order to render an action button for each file: `<button type='button' class='k-upload-action'></button>`.
->To use the default progress-bar, you should add the following markup at the beginning of the template `<span class='k-progress'></span>` and render the rest of the template relative to it. Please check [Upload Templates](http://demos.kendoui.com/web/upload/templates.html) for a live demo.
+>To use the default progress-bar, you should add the following markup at the beginning of the template `<span class='k-progress'></span>` and render the rest of the template relative to it. Please check [Upload Templates](http://demos.kendoui.com/beta/web/upload/templates.html) for a live demo.
 
 #### Example - specify template as a function
 
