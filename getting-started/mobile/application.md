@@ -203,9 +203,9 @@ passing the view id in the options parameter of the Application's constructor:
          });
     </script>
 
-## Web Clip Icons
+## Web Clips
 
-The mobile devices can create a bookmark with a custom icon, placed on the Home screen. Users can use the shortcut to open that web page later.
+The mobile devices can create a bookmark placed on the Home screen, which is called a web clip. Users can use the shortcut to open that web page later. While instantiating the Application, you can specify a custom icon or disable the app mode.
 
 ### Define web clip icon
 
@@ -226,6 +226,16 @@ for more information.
                "72x72" : "URL to a 72 x 72 pixels web clip icon",
                "114x114" : "URL to a 114 x 114 pixels web clip icon"
              }
+         });
+    </script>
+
+As of Q2 2013, you can disable the app mode and open the home screen web clip link in the browser (by default Kendo UI Mobile applications are web app capable and open without the browser chrome).
+
+### Open web clip link in the browser
+
+    <script>
+         new kendo.mobile.Application($(document.body), {
+             webAppCapable: false
          });
     </script>
 
