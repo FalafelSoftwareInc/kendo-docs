@@ -2,6 +2,7 @@
 title: Image Browser
 slug: gs-web-editor-imagebrowser
 tags: editor,imagebrowser,web
+ordinal: 2
 publish: true
 ---
 

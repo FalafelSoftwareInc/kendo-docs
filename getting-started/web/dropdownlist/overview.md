@@ -5,6 +5,7 @@ meta_description: Quickly explore all features of Kendo UI DropDown control and 
 slug: gs-web-dropdownlist-overview
 relatedDocs: api-web-dropdownlist
 tags: getting-started,web
+ordinal: 1
 publish: true
 ---
 

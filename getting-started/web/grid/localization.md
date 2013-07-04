@@ -1,6 +1,7 @@
 ---
 title: Localization
 slug: grid-localization
+ordinal: 4
 publish: true
 ---
 

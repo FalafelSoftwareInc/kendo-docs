@@ -5,6 +5,7 @@ meta_description: Create ComboBox UI widget, use Kendo UI templates, instruction
 slug: gs-web-combobox-overview
 relatedDocs: api-web-combobox
 tags: getting-started,web
+ordinal: 1
 publish: true
 ---
 

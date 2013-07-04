@@ -5,6 +5,7 @@ meta_description: Quick steps to help you create Kendo UI Grid, initialization a
 slug: gs-web-grid-overview
 relatedDocs: api-web-grid
 tags: getting-started,web
+ordinal: 1
 publish: true
 ---
 

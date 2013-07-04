@@ -5,6 +5,7 @@ meta_description: How to use File Upload UI widget, initialize Upload and access
 slug: gs-web-upload-overview
 relatedDocs: api-web-upload
 tags: getting-started,web
+ordinal: 1
 publish: true
 ---
 

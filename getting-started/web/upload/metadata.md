@@ -3,6 +3,7 @@ title: Metadata
 meta_title: Documentation guide for using metadata in File Upload UI widget
 meta_description: How to send metadata to the save handler and receive metadata in Kendo UI Upload widget.
 slug: upload-metadata
+ordinal: 3
 publish: true
 ---
 

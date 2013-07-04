@@ -3,6 +3,7 @@ title: Editing
 meta_title: Documentation for enabling editing in Grid UI widget
 meta_description: Which steps to follow in order to enable the editing support of Kendo UI jQuery grid widget.
 slug: grid-editing
+ordinal: 3
 publish: true
 ---
 

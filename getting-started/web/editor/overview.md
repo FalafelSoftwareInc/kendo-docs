@@ -5,6 +5,7 @@ meta_description: The documentation guide will help you initialize Kendo web edi
 slug: gs-web-editor-overview
 relatedDocs: api-web-editor
 tags: getting-started,web
+ordinal: 1
 publish: true
 ---
 
