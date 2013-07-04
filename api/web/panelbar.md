@@ -414,8 +414,8 @@ Reloads the content of a **PanelBar** from an AJAX request.
 
     // get a reference to the panel bar
     var panelBar = $("#panelBar").data("kendoPanelBar");
-    // reload the panel basr
-    panelBar.reload();
+    // reload the panel bar
+    panelBar.reload("> .k-item");
 
 #### Parameters
 
