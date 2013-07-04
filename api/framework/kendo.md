@@ -20,8 +20,8 @@ exposing the data objects from the Model in such a way that those objects are ea
 > **Important:** Kendo UI Mobile is not included in the default list of initialized namespaces. You can initialize it explicitly by
   running `kendo.bind(element, viewModel, kendo.mobile.ui);`
 
-
 #### Example
+
      <!-- View -->
      <div id="view">
        <!-- The value of the INPUT element is bound to the "firstName" field of the View-Model.
@@ -50,6 +50,7 @@ exposing the data objects from the Model in such a way that those objects are ea
        // Bind the View to the View-Model
        kendo.bind($("#view"), viewModel);
      </script>
+
 #### Parameters
 
 ##### element `String|jQuery|Node`
@@ -64,7 +65,77 @@ The View-Model which the elements are bound to. Wraped as an instance of `kendo.
 ##### namespace `Object`
 
 Optional namespace too look in when instantiating Kendo UI widgets. The valid namespaces are `kendo.ui`, `kendo.dataviz.ui` and `kendo.mobile.ui`. If omitted
-`kendo.ui` will be used.
+`kendo.ui` will be used. Multiple namespaces can be passed.
+
+###### Example
+
+     <div id="view">
+       <label>First Name:<input data-bind="value: firstName" /></label>
+       <label>Last Name:<input data-bind="value: lastName" /></label>
+       <button data-role="button" data-bind="events: { click: displayGreeting }">Display Greeting</button>
+     </div>
+
+     <script>
+       // View-Model
+       var viewModel = kendo.observable({
+          firstName: "John",
+          lastName: "Doe",
+          displayGreeting: function() {
+              // Get the current values of "firstName" and "lastName"
+              var firstName = this.get("firstName");
+              var lastName = this.get("lastName");
+              alert("Hello, " + firstName + " " + lastName + "!!!");
+          }
+       });
+
+       // Bind the View to the View-Model, initializing mobile and web widgets, in that priority.
+       kendo.bind($("#view"), viewModel, kendo.mobile.ui, kendo.ui);
+     </script>
+
+### init
+
+Instantiates Kendo UI widgets in a given DOM element based on role data attributes.
+
+#### Example
+     <div id="view">
+        <div>
+            <input data-role="autocomplete" data-source="data" data-filter="startswith" data-placeholder="select country ..." />
+        </div>
+     </div>
+     <script>
+     var data = [ "Albania", "Andorra", "Armenia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bosnia & Herzegovina", "Bulgaria", "Croatia", "Cyprus"  ];
+
+     kendo.init($("#view"));
+     </script>
+
+#### Parameters
+
+##### element `String|jQuery|Node`
+
+The root element(s) from which the instantiation starts. Can be a valid jQuery string selector, a DOM element or a jQuery object. All child elements are traversed.
+
+##### namespace `Object`
+
+Optional namespace too look in when instantiating Kendo UI widgets. The valid namespaces are `kendo.ui`, `kendo.dataviz.ui` and `kendo.mobile.ui`. If omitted
+`kendo.ui` will be used. Multiple namespaces can be passed.
+
+###### Example
+
+     <div id="view">
+        <div>
+            <input data-role="autocomplete" data-source="data" data-filter="startswith" data-placeholder="select country ..." />
+            <button data-role="button" data-click="foo">Foo</button>
+        </div>
+     </div>
+
+     <script>
+     function foo(e) {
+         console.log(e.sender); // a mobile button
+     }
+     var data = [ "Albania", "Andorra", "Armenia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bosnia & Herzegovina", "Bulgaria", "Croatia", "Cyprus"  ];
+
+     kendo.init($("#view"), kendo.mobile.ui, kendo.ui);
+     </script>
 
 ### observableHierarchy
 

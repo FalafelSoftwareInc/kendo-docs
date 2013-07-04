@@ -11,7 +11,7 @@ related: gs-widgets
 # Data Attribute Initialization
 
 In addition to the jQuery plugin initialization, each kendo widget can be initialized and configured via data attributes. You need to set the `role` data attribute
-of the target element and call [kendo.init](/api/framework/kendo#init).
+of the target element and call [kendo.init](/api/framework/kendo#methods-init).
 
 Data attribute initialization is convenient when there are a lot of Kendo UI widgets in the page. First the widget configuration stays with the target element. Second
 there is no need to find all elements to invoke the Kendo jQuery plugins - you only need to call `kendo.init` once.
@@ -31,9 +31,10 @@ The `kendo.init($("#container"))` statement finds all elements that have the `ro
 
 > The value of the `role` data attribute is the name of the widget in lower case e.g. "autocomplete", "dropdownlist" etc.
 
-By default, `kendo.init` initializes only Kendo UI Web and Kendo UI DataViz widgets (in that order). The Kendo UI Mobile [Application](/getting-started/mobile/application)
+By default, `kendo.init` initializes only Kendo UI Web and Kendo UI DataViz widgets (in that order). This behavior can be changed by passing additional namespaces as parameters. The Kendo UI Mobile [Application](/getting-started/mobile/application)
 initializes first Kendo UI Mobile widgets, then Kendo UI Web widgets and finally Kendo UI DataViz widgets. This means that an element with `data-role="listview"` will be initialized as a Kendo UI Mobile ListView in a Kendo UI Mobile Application.
-This behaviour can be overriden by specifying the full widget class name (with its namespace) in the role attribute.
+
+The data-role attribute also accepts full widget class name (with its namespace) as value.
 
 ### Example - set role attribute to the full widget name
     <div data-role="view">
@@ -42,6 +43,16 @@ This behaviour can be overriden by specifying the full widget class name (with i
     </div>
     <script>
     var app = new kendo.mobile.Application();
+    </script>
+
+### Example - instantiate mobile and web widgets in a given element
+
+    <div id="container">
+        <input data-role="numerictextbox" />
+        <button data-role="button">Mobile button</button>
+    </div>
+    <script>
+    kendo.init($("#container"), kendo.ui, kendo.mobile.ui);
     </script>
 
 ## Configuration
