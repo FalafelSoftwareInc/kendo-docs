@@ -148,6 +148,14 @@ use the API to control its behavior.
 
     var win = $("#window").data("kendoWindow");
 
+### Accessing an existing Window instance from within an iframe
+
+If the Window is displaying a page in an iframe and this page needs to access the widget, this can be achieved by using window.parent from within the iframe.
+
+    var win = window.parent.$("#window").data("kendoWindow");
+
+> Please note that iframe-parent access is possible only if the iframe and the parent page belong to the same domain.
+	
 ## Using Kendo UI Window with a form
 
 By default, the Window widget is moved in the DOM and placed as a child of the `body` element after initialization. This facilitates positioning the widget on top of everything else,
