@@ -150,7 +150,7 @@ use the API to control its behavior.
 
 ### Accessing an existing Window instance from within an iframe
 
-If the Window is displaying a page in an iframe and this page needs to access the widget, this can be achieved by using window.parent from within the iframe.
+If the Window is displaying a page in an iframe and the page needs to access the widget, this can be achieved by using `window.parent` from within the iframe.
 
     var win = window.parent.$("#window").data("kendoWindow");
 
