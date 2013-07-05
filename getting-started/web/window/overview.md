@@ -148,6 +148,14 @@ use the API to control its behavior.
 
     var win = $("#window").data("kendoWindow");
 
+### Accessing an existing Window instance from its non-iframe content
+
+An easy way to obtain reference to a Kendo UI Window instance from within its non-iframe content is to use DOM traversal.
+
+    var win = elementInsideWindow.closest(".k-window-content").data("kendoWindow");
+
+`elementInsideWindow` is a jQuery object containing and element inside the Window content area.
+
 ### Accessing an existing Window instance from within an iframe
 
 If the Window is displaying a page in an iframe and the page needs to access the widget, this can be achieved by using `window.parent` from within the iframe.
