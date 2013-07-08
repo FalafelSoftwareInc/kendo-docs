@@ -3649,6 +3649,10 @@ The [data source](/api/framework/datasource) of the widget. Configured via the [
     grid.dataSource.remove(data);
     </script>
 
+### table `jQuery`
+
+The jQuery object which represents the grid table element.
+
 ### tbody `jQuery`
 
 The jQuery object which represents the table body. Contains all grid table rows.
@@ -3672,6 +3676,10 @@ The jQuery object which represents the table body. Contains all grid table rows.
     var data = grid.dataItem(row);
     console.log(data.name); // displays "Jane Doe"
     </script>
+
+### thead `jQuery`
+
+The jQuery object which represents the grid table header element.
 
 ## Methods
 
