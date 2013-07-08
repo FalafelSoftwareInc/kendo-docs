@@ -276,6 +276,16 @@ Template to be used for rendering the items in the list.
          value: "Item1"
     });
 
+## Fields
+
+### list `jQuery`
+
+The jQuery object which wraps the dropdownlist items.
+
+### ul `jQuery`
+
+The jQuery object which contains the dropdownlist items.
+
 ## Methods
 
 ### close
