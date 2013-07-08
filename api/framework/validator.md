@@ -150,7 +150,7 @@ Validates the input element against the declared validation rules.
 
 #### Parameters
 
-##### input `Element`
+##### input `Element|jQuery`
 
 Input element to be validated.
 
