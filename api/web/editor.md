@@ -582,6 +582,12 @@ Defines text for dialog shown when an already existing file is set for upload.
 
 Defines text for search box pleaceholder.
 
+## Fields
+
+### body `Element`
+
+The HTML element which represents the editor content area.
+
 ## Methods
 
 ### createRange
