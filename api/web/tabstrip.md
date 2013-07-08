@@ -207,6 +207,12 @@ tab.
         dataSource: data
     });
 
+## Fields
+
+### tabGroup `jQuery`
+
+The jQuery object which contains the tabstrip items.
+
 ## Methods
 
 ### append
