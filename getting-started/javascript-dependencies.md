@@ -26,6 +26,7 @@ The following combined scripts are provided in order to simplify development and
 
 > **Important:** Only one of the **kendo.web.min.js**, **kendo.dataviz.min.js** and **kendo.mobile.min.js** JavaScript files can be included at a time. If widgets from
 different Kendo UI suites are needed one can either use **kendo.all.min.js** or create a custom combined JavaSript file via the [custom download builder tool](http://www.kendoui.com/custom-download).
+In addition, each of these three files should not be registered together with an individual widget script, e.g. `kendo.grid.js`.
 
 ## Custom Combined Scripts
 
