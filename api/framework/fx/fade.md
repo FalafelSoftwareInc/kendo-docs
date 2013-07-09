@@ -29,7 +29,7 @@ The direction of the effect.
 
 ### startValue
 
-Sets the zoom value for the element when it is faded in. By default the element fades in to opacity value of 1.
+Sets the fade value for the element when it is faded in. By default the element fades in to opacity value of 1.
 
 #### Parameters
 
@@ -43,7 +43,7 @@ the fade in value.
 
 ### endValue
 
-    Sets the fade value for the element when it is faded out. By default the element fades in to opacity value of 0.
+Sets the fade value for the element when it is faded out. By default the element fades in to opacity value of 0.
 
 #### Parameters
 
