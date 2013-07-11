@@ -57,6 +57,8 @@ The message template displayed when the user pulls the listView. Applicable only
 
 If set to true, the listview will reload its data when the user pulls the view over the top limit.
 
+> Pull to refresh option is not compatible with native scrolling containers (view with `use-native-scrolling=true` or scroller with `use-native=true` attributes).
+
 ### pullParameters `Function`
 
 A callback function used when the 'pullToRefresh' option is enabled. The result of the function will be send as additional parameters to the DataSource's next method.
