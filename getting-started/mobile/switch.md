@@ -29,7 +29,7 @@ Alternatively, it can be initialized using jQuery plugin syntax in the containin
     <input type="checkbox" id="switch" />
 
     <script>
-        var switchWidget = $("#switch").kendoMobileSwitch();
+        var switchInstance = $("#switch").kendoMobileSwitch();
     </script>
 
 ## Checking/Unchecking the Mobile Switch
@@ -42,7 +42,7 @@ or the `checked` attribute of the widget element.
     <input type="checkbox" id="switch" checked="checked" />
 
     <script>
-        var switchWidget = $("#switch").kendoMobileSwitch();
+        var switchInstance = $("#switch").kendoMobileSwitch();
     </script>
 
 ### Initialize checked mobile Switch using jQuery plugin syntax
@@ -50,7 +50,7 @@ or the `checked` attribute of the widget element.
     <input type="checkbox" id="switch" />
 
     <script>
-        var switchWidget = $("#switch").kendoMobileSwitch({ checked: true });
+        var switchInstance = $("#switch").kendoMobileSwitch({ checked: true });
     </script>
 
 ## Specifying the Text of the Labels
@@ -60,6 +60,6 @@ or the `checked` attribute of the widget element.
     <input type="checkbox" id="switch" />
 
     <script>
-        var switchWidget = $("#switch").kendoMobileSwitch({ onLabel: "YES", offLabel: "NO" });
+        var switchInstance = $("#switch").kendoMobileSwitch({ onLabel: "YES", offLabel: "NO" });
     </script>
 

@@ -38,13 +38,13 @@ Get/Set the checked state of the widget.
 
     <script>
       // get a reference to the switch widget
-      var switch = $("#foo").data("kendoMobileSwitch");
+      var switchInstance = $("#foo").data("kendoMobileSwitch");
 
       // get the checked state of the switch.
-      var checked = switch.check();
+      var checked = switchInstance.check();
 
       // set the checked state of the switch.
-      switch.check(true);
+      switchInstance.check(true);
     </script>
 
 #### Parameters
@@ -64,10 +64,10 @@ Prepares the **Switch** for safe removal from DOM. Detaches all event handlers a
 
 #### Example
 
-    var switch = $("#switch").data("kendoMobileSwitch");
+    var switchInstance = $("#switch").data("kendoMobileSwitch");
 
     // detach events
-    switch.destroy();
+    switchInstance.destroy();
 
 ### toggle
 
@@ -79,10 +79,10 @@ Toggle the checked state of the widget.
 
     <script>
       // get a reference to the switch
-      var switch = $("#foo").data("kendoMobileSwitch");
+      var switchInstance = $("#foo").data("kendoMobileSwitch");
 
       // toggle the checked state of the switch.
-      switch.toggle();
+      switchInstance.toggle();
     </script>
 
 ## Events
