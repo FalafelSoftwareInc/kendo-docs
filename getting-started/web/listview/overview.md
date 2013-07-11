@@ -42,15 +42,14 @@ remote data using the Kendo DataSource component.
 
 ## Configuring ListView Behavior
 
-Kendo ListView supports paging, selection, navigation, editing. Configuring any of
+Kendo ListView supports selection, navigation, editing. Configuring any of
 these ListView behaviors is done using simple boolean configuration options. For
 example, the follow snippet shows how to enable all of these behaviors.
 
-### Enabling ListView paging, selection, navigation and editing
+### Enabling ListView selection, navigation and editing
 
       $(document).ready(function() {
           $("#listView").kendoListView({
-             pageable: true,
              selectable: true,
              navigatable: true,
              editable: true,
@@ -59,5 +58,34 @@ example, the follow snippet shows how to enable all of these behaviors.
           });
       });
 
-By default, paging, selection, navigation and editing are **disabled**.
+By default selection, navigation and editing are **disabled**.
+
+To enable paging, the developer should initiaze separate pager control and bind it to the same DataSource.
+
+### Enabling ListView paging
+
+    <div id="listview"></div>
+    <div id="pager"></div>
+    <script>
+        var dataSource = new kendo.data.DataSource({
+            data: [
+                { id: 1, item: "Item 1" },
+                { id: 2, item: "Item 2" },
+                { id: 3, item: "Item 3" },
+                { id: 4, item: "Item 4" },
+                { id: 5, item: "Item 5" },
+                { id: 6, item: "Item 6" }
+            ],
+            pageSize: 2
+        });
+
+        $("#listview").kendoListView({
+            dataSource: dataSource,
+            template: "<div>#: item #</div>"
+        });
+
+        $("#pager").kendoPager({
+            dataSource: dataSource
+        });
+    </script>
 
