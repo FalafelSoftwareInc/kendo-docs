@@ -113,7 +113,7 @@ as a collection of required properties, while the insertHtml tool requires a col
              "insertHtml",
              "subscript",
              "superscript",
-             "createTable", "addColumnLeft", "addColumnRight", "addRowAbove", "addRowBelow", "deleteRow", "deleteColumn"
+             "createTable", "addColumnLeft", "addColumnRight", "addRowAbove", "addRowBelow", "deleteRow", "deleteColumn",
              "viewHtml",
              {
                  name: "customTool",
