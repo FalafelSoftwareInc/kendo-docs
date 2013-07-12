@@ -2707,7 +2707,7 @@ The data items which will replace the current ones in the data source. If omitte
 
 #### Returns
 
-`kendo.data.ObservableArray` the data items of the data source. Returns empty array if the data source hasn't been populated with data items via the [read](#methods-read), [fetch](#methods-read) or [query](#methods-query) methods.
+`kendo.data.ObservableArray` the data items of the data source. Returns empty array if the data source hasn't been populated with data items via the [read](#methods-read), [fetch](#methods-fetch) or [query](#methods-query) methods.
 
 #### Example - get the data items when bound to array
 
