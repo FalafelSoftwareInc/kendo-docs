@@ -19,7 +19,7 @@ An alias to the [prototype](https://developer.mozilla.org/en-US/docs/JavaScript/
 #### Example
 
     // Create a base class
-    var Animal = kendo.Class.Extend({
+    var Animal = kendo.Class.extend({
         // The `init` method will be called when a new instance is created
         init: function(legs) {
            this.legs = legs;
@@ -65,7 +65,7 @@ A key/value pair of all methods that the new class will have.
 
     var Bird = Animal.extend({
        move: function() {
-            Animal.fn.call(this);
+            Animal.fn.move.call(this);
 
             console.log("Fly");
        }
@@ -73,7 +73,7 @@ A key/value pair of all methods that the new class will have.
 
     var Cat = Animal.extend({
        move: function() {
-            Animal.fn.call(this);
+            Animal.fn.move.call(this);
 
             console.log("Sneak");
        }
