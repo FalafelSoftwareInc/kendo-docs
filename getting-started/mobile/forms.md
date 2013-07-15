@@ -63,19 +63,23 @@ if you encounter such issues and want to work around them, you can disable the i
         -webkit-user-modify: inherit;
     }
 
-    .km-android .km-list > li
-    {
-        bottom: auto;
-        -webkit-transform: none;
-        -moz-transform: none;
-    }
-
 As of Q3 2012, the rules needed should have more specificity and different selectors:
 
     .km-root .km-on-android input
     {
         -webkit-user-modify: inherit;
     }
+
+> **Important:** As of Q2 2013, the Android 2 fake input workaround has been removed from the common CSS as it causes multiple issues with phone keyboards. Add this rule to your CSS in order to return it:
+
+    .km-on-android.km-2 .km-list > li,
+    .km-on-android.km-3 .km-list > li
+    {
+        bottom: 10000px;
+        .transform(translatey(10000px));
+    }
+
+Older releases than Q2 2013, will require the following rule to disable the Android 2 workaround:
 
     .km-root .km-on-android .km-list > li
     {
@@ -84,3 +88,11 @@ As of Q3 2012, the rules needed should have more specificity and different selec
         -moz-transform: none;
     }
 
+and if older than Q3 2012, this rule instead:
+
+    .km-android .km-list > li
+    {
+        bottom: auto;
+        -webkit-transform: none;
+        -moz-transform: none;
+    }
